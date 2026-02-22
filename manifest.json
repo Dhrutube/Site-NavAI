@@ -1,0 +1,22 @@
+{
+    "manifest_version": 3,
+    "name": "AI Page Navigator",
+    "version": "1.0",
+    "description": "Find anything on a website using AI",
+    "permissions": ["activeTab", "scripting", "storage"],
+    "host_permissions": ["<all_urls>"],
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": "icon.png"
+    },
+    "background": {
+      "service_worker": "background.js"
+    },
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["content.js"]
+      }
+    ]
+  }
+  
