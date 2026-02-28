@@ -1,6 +1,6 @@
 {
     "manifest_version": 3,
-    "name": "AI Page Navigator",
+    "name": "Site NavAI",
     "version": "1.0",
     "description": "Find anything on a website using AI",
     "permissions": ["activeTab", "scripting", "storage"],
